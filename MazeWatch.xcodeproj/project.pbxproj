@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE4DA10D215D1E5700AD00EF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4DA10C215D1E5700AD00EF /* GameViewController.swift */; };
+		BE4DA10F215D1EA800AD00EF /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4DA10E215D1EA800AD00EF /* Game.storyboard */; };
+		BE4DA111215D22C400AD00EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4DA110215D22C400AD00EF /* Assets.xcassets */; };
 		BE7790D6215D064A00FE7690 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7790D5215D064A00FE7690 /* AppDelegate.swift */; };
 		BE7790D8215D064A00FE7690 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7790D7215D064A00FE7690 /* ViewController.swift */; };
 		BE7790DB215D064A00FE7690 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7790D9215D064A00FE7690 /* Main.storyboard */; };
-		BE7790DD215D064D00FE7690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE7790DC215D064D00FE7690 /* Assets.xcassets */; };
 		BE7790E0215D064E00FE7690 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7790DE215D064D00FE7690 /* LaunchScreen.storyboard */; };
 		BE7790E5215D064E00FE7690 /* MazeWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BE7790E4215D064E00FE7690 /* MazeWatch WatchKit App.app */; };
 		BE7790EB215D064E00FE7690 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7790E9215D064E00FE7690 /* Interface.storyboard */; };
@@ -66,11 +68,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BE4DA10C215D1E5700AD00EF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		BE4DA10E215D1EA800AD00EF /* Game.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
+		BE4DA110215D22C400AD00EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE7790D2215D064A00FE7690 /* MazeWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MazeWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7790D5215D064A00FE7690 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE7790D7215D064A00FE7690 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE7790DA215D064A00FE7690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BE7790DC215D064D00FE7690 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE7790DF215D064E00FE7690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE7790E1215D064E00FE7690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE7790E4215D064E00FE7690 /* MazeWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MazeWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +109,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE4DA10B215D1E1400AD00EF /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				BE4DA10C215D1E5700AD00EF /* GameViewController.swift */,
+				BE4DA10E215D1EA800AD00EF /* Game.storyboard */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
 		BE7790C9215D064A00FE7690 = {
 			isa = PBXGroup;
 			children = (
@@ -128,12 +141,13 @@
 		BE7790D4215D064A00FE7690 /* MazeWatch */ = {
 			isa = PBXGroup;
 			children = (
+				BE4DA10B215D1E1400AD00EF /* Game */,
 				BE7790D5215D064A00FE7690 /* AppDelegate.swift */,
 				BE7790D7215D064A00FE7690 /* ViewController.swift */,
 				BE7790D9215D064A00FE7690 /* Main.storyboard */,
-				BE7790DC215D064D00FE7690 /* Assets.xcassets */,
 				BE7790DE215D064D00FE7690 /* LaunchScreen.storyboard */,
 				BE7790E1215D064E00FE7690 /* Info.plist */,
+				BE4DA110215D22C400AD00EF /* Assets.xcassets */,
 			);
 			path = MazeWatch;
 			sourceTree = "<group>";
@@ -264,8 +278,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE4DA10F215D1EA800AD00EF /* Game.storyboard in Resources */,
 				BE7790E0215D064E00FE7690 /* LaunchScreen.storyboard in Resources */,
-				BE7790DD215D064D00FE7690 /* Assets.xcassets in Resources */,
+				BE4DA111215D22C400AD00EF /* Assets.xcassets in Resources */,
 				BE7790DB215D064A00FE7690 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE7790D8215D064A00FE7690 /* ViewController.swift in Sources */,
+				BE4DA10D215D1E5700AD00EF /* GameViewController.swift in Sources */,
 				BE7790D6215D064A00FE7690 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="UcR-9H-gXi">
+            <objects>
+                <viewController id="Fy1-Ir-fT6" customClass="GameViewController" customModule="MazeWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UiH-9R-b9q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ek6-Mn-jhl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N54-Ix-mdd">
+                                        <rect key="frame" x="307" y="30" width="48" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="BA4-5a-oFx"/>
+                                            <constraint firstAttribute="width" constant="48" id="Toh-O7-RfM"/>
+                                        </constraints>
+                                        <state key="normal" image="Pause"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvF-XD-gff">
+                                        <rect key="frame" x="239" y="30" width="48" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="HQe-C1-frG"/>
+                                            <constraint firstAttribute="width" constant="48" id="ZhB-bk-PSd"/>
+                                        </constraints>
+                                        <state key="normal" image="Restart"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="N54-Ix-mdd" secondAttribute="trailing" constant="20" id="Hzb-6e-xu3"/>
+                                    <constraint firstItem="N54-Ix-mdd" firstAttribute="leading" secondItem="cvF-XD-gff" secondAttribute="trailing" constant="20" id="LLu-Yp-ilj"/>
+                                    <constraint firstItem="N54-Ix-mdd" firstAttribute="top" secondItem="Ek6-Mn-jhl" secondAttribute="top" constant="30" id="Usf-9f-BPi"/>
+                                    <constraint firstItem="cvF-XD-gff" firstAttribute="top" secondItem="N54-Ix-mdd" secondAttribute="top" id="oou-aB-hh0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ek6-Mn-jhl" firstAttribute="bottom" secondItem="La3-E1-PNu" secondAttribute="bottom" id="6MP-tv-okv"/>
+                            <constraint firstItem="Ek6-Mn-jhl" firstAttribute="top" secondItem="UiH-9R-b9q" secondAttribute="top" id="LPe-cR-XNB"/>
+                            <constraint firstItem="Ek6-Mn-jhl" firstAttribute="trailing" secondItem="La3-E1-PNu" secondAttribute="trailing" id="Zrd-nm-XFJ"/>
+                            <constraint firstItem="Ek6-Mn-jhl" firstAttribute="leading" secondItem="La3-E1-PNu" secondAttribute="leading" id="dYS-aH-zPd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="La3-E1-PNu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ej-k0-CnW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26.399999999999999" y="12.143928035982009"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pause" width="128" height="128"/>
+        <image name="Restart" width="128" height="128"/>
+    </resources>
+</document>
