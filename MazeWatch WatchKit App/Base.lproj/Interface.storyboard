@@ -20,6 +20,10 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="bolinha" destination="6uN-fk-vmV" id="AQV-Ox-dis"/>
+                        <outlet property="graficoBolinha" destination="PHs-su-z0H" id="yMR-xO-BiJ"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
