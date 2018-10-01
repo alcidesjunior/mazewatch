@@ -12,45 +12,18 @@
         <!--Acelerometro Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-<<<<<<< HEAD
-                <controller id="AgC-eL-Hgc" customClass="AcelerometroInterfaceController" customModule="MazeWatch_WatchKit_Extension">
-                    <items>
-                        <label width="132" alignment="center" text="Acelerometro" textAlignment="center" id="yAv-gh-41q"/>
-                        <group width="1" alignment="left" id="bF9-Yq-F3E">
-                            <items>
-                                <label alignment="left" text="x:" id="dlM-eD-rMe"/>
-                                <label alignment="left" text=" valorX" id="9yk-Cy-mv1"/>
-                            </items>
-                        </group>
-                        <group width="1" alignment="left" id="aE9-en-6nt">
-                            <items>
-                                <label alignment="left" text="y:" id="DlM-kb-I7j"/>
-                                <label alignment="left" text=" valorY" id="WJy-MO-7D7"/>
-                            </items>
-                        </group>
-                        <group width="1" alignment="left" id="7fl-5v-fCg">
-                            <items>
-                                <label alignment="left" text="z:" id="hfH-j8-tbN"/>
-                                <label alignment="left" text=" valorZ" id="0ou-j5-96L"/>
-=======
+
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MazeWatch_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group width="1" height="150" alignment="left" backgroundImage="grafico" layout="vertical" spacing="0.0" id="PHs-su-z0H">
                             <items>
                                 <imageView width="20" height="20" alignment="center" verticalAlignment="center" image="Ellipse 1" contentMode="scaleAspectFill" id="6uN-fk-vmV"/>
->>>>>>> buildingInterfaceWatch
                             </items>
                         </group>
                     </items>
                     <connections>
-<<<<<<< HEAD
-                        <outlet property="valorX" destination="9yk-Cy-mv1" id="F5v-Ld-ygD"/>
-                        <outlet property="valorY" destination="WJy-MO-7D7" id="TGs-Bc-TBc"/>
-                        <outlet property="valorZ" destination="0ou-j5-96L" id="wVW-KO-vWW"/>
-=======
                         <outlet property="bolinha" destination="6uN-fk-vmV" id="AQV-Ox-dis"/>
                         <outlet property="graficoBolinha" destination="PHs-su-z0H" id="yMR-xO-BiJ"/>
->>>>>>> buildingInterfaceWatch
                     </connections>
                 </controller>
             </objects>
