@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ksy-z9-sv6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--End Game View Controller-->
+        <scene sceneID="fep-E1-IZL">
+            <objects>
+                <viewController storyboardIdentifier="EndGame" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ksy-z9-sv6" customClass="EndGameViewController" customModule="MazeWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pnx-BO-H6p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vga-AJ-r8o">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo de partida" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0f-0w-SMs">
+                                        <rect key="frame" x="62" y="265" width="250" height="36"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBJ-zS-uPm">
+                                        <rect key="frame" x="62" y="563" width="251" height="48"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                        <state key="normal" title="Reset">
+                                            <color key="titleColor" red="0.16078431372549018" green="0.16078431372549018" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btResetPressed:" destination="ksy-z9-sv6" eventType="touchUpInside" id="A4P-VA-DYW"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uk3-lA-9iP">
+                                        <rect key="frame" x="137" y="316" width="101" height="48"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.16078431372549018" green="0.16078431372549018" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="b0f-0w-SMs" secondAttribute="trailing" constant="63" id="79W-Q9-cfM"/>
+                                    <constraint firstAttribute="bottom" secondItem="lBJ-zS-uPm" secondAttribute="bottom" constant="56" id="Fs9-Ch-wGO"/>
+                                    <constraint firstItem="uk3-lA-9iP" firstAttribute="leading" secondItem="vga-AJ-r8o" secondAttribute="leading" constant="137" id="kYc-nC-5Rv"/>
+                                    <constraint firstItem="b0f-0w-SMs" firstAttribute="top" secondItem="vga-AJ-r8o" secondAttribute="top" constant="265" id="o40-B2-yAs"/>
+                                    <constraint firstItem="lBJ-zS-uPm" firstAttribute="leading" secondItem="vga-AJ-r8o" secondAttribute="leading" constant="62" id="qqp-lX-yJW"/>
+                                    <constraint firstAttribute="trailing" secondItem="lBJ-zS-uPm" secondAttribute="trailing" constant="62" id="sZE-ml-JL9"/>
+                                    <constraint firstItem="uk3-lA-9iP" firstAttribute="top" secondItem="b0f-0w-SMs" secondAttribute="bottom" constant="15" id="ynQ-ec-wyz"/>
+                                    <constraint firstItem="b0f-0w-SMs" firstAttribute="leading" secondItem="vga-AJ-r8o" secondAttribute="leading" constant="62" id="yr5-R8-xJd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vga-AJ-r8o" firstAttribute="top" secondItem="pnx-BO-H6p" secondAttribute="top" id="7mk-Dq-CaL"/>
+                            <constraint firstItem="vga-AJ-r8o" firstAttribute="bottom" secondItem="aev-DA-1Yy" secondAttribute="bottom" id="LB1-A5-p1t"/>
+                            <constraint firstItem="vga-AJ-r8o" firstAttribute="leading" secondItem="aev-DA-1Yy" secondAttribute="leading" id="m6P-uE-5Mc"/>
+                            <constraint firstItem="vga-AJ-r8o" firstAttribute="trailing" secondItem="aev-DA-1Yy" secondAttribute="trailing" id="xT6-oF-onN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aev-DA-1Yy"/>
+                    </view>
+                    <connections>
+                        <outlet property="btReset" destination="lBJ-zS-uPm" id="Es9-Jg-vnv"/>
+                        <outlet property="lbTime" destination="uk3-lA-9iP" id="qAq-nR-PgC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jkV-97-eEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160.80000000000001" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
