@@ -27,7 +27,10 @@
                                             <constraint firstAttribute="height" constant="48" id="HQe-C1-frG"/>
                                             <constraint firstAttribute="width" constant="48" id="ZhB-bk-PSd"/>
                                         </constraints>
-                                        <state key="normal" image="Restart"/>
+                                        <state key="normal" image="restart"/>
+                                        <connections>
+                                            <action selector="btRestarPressed:" destination="Fy1-Ir-fT6" eventType="touchUpInside" id="2Hh-nz-qK3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N54-Ix-mdd">
                                         <rect key="frame" x="307" y="30" width="48" height="48"/>
@@ -35,7 +38,10 @@
                                             <constraint firstAttribute="height" constant="48" id="BA4-5a-oFx"/>
                                             <constraint firstAttribute="width" constant="48" id="Toh-O7-RfM"/>
                                         </constraints>
-                                        <state key="normal" image="Pause"/>
+                                        <state key="normal" image="pause"/>
+                                        <connections>
+                                            <action selector="btPausePressed:" destination="Fy1-Ir-fT6" eventType="touchUpInside" id="zlQ-iW-JzE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.16078431372549018" green="0.16078431372549018" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -63,7 +69,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Pause" width="128" height="128"/>
-        <image name="Restart" width="128" height="128"/>
+        <image name="pause" width="128" height="128"/>
+        <image name="restart" width="128" height="128"/>
     </resources>
 </document>
