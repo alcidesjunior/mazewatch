@@ -9,16 +9,37 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
     </dependencies>
     <scenes>
-        <!--Acelerometro Interface Controller-->
+        <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MazeWatch_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group width="1" height="150" alignment="left" backgroundImage="grafico" layout="vertical" spacing="0.0" id="PHs-su-z0H">
                             <items>
                                 <imageView width="20" height="20" alignment="center" verticalAlignment="center" image="Ellipse 1" contentMode="scaleAspectFill" id="6uN-fk-vmV"/>
                             </items>
+                            <gestureRecognizers>
+                                <swipeGestureRecognizer id="4ev-Fr-cFD">
+                                    <connections>
+                                        <action selector="getSwipe:" destination="AgC-eL-Hgc" id="6p8-wp-dWe"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                                <swipeGestureRecognizer direction="2" id="mMz-kg-UpT">
+                                    <connections>
+                                        <action selector="getSwipe:" destination="AgC-eL-Hgc" id="lWr-sO-f4q"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                                <swipeGestureRecognizer direction="4" id="Nvd-uX-uXN">
+                                    <connections>
+                                        <action selector="getSwipe:" destination="AgC-eL-Hgc" id="Thw-mV-XIm"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                                <swipeGestureRecognizer direction="8" id="mac-z2-koU">
+                                    <connections>
+                                        <action selector="getSwipe:" destination="AgC-eL-Hgc" id="z4n-Cl-fxO"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                            </gestureRecognizers>
                         </group>
                     </items>
                     <connections>

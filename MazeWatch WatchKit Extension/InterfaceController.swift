@@ -9,10 +9,12 @@
 import WatchKit
 import Foundation
 import CoreMotion
+import WatchConnectivity
 
-class InterfaceController: WKInterfaceController {
+class InterfaceController: WKInterfaceController, WCSessionDelegate {
 	@IBOutlet var bolinha: WKInterfaceImage!
 	@IBOutlet var graficoBolinha: WKInterfaceGroup!
+    var session: WCSession? = WCSession.default
 	
 	var motionManager = CMMotionManager()
 
@@ -42,16 +44,48 @@ class InterfaceController: WKInterfaceController {
 		}
 		
 	}
-
+    @IBAction func getSwipe(_ sender: Any) {
+        let direction = sender as! WKSwipeGestureRecognizer
+        switch direction.direction {
+        case .right:
+            sendCoordinate(x: 1, y: 0)
+        case .left:
+            sendCoordinate(x: -1, y: 0)
+        case .down:
+            sendCoordinate(x: 0, y: -1)
+        case .up:
+           sendCoordinate(x: 0, y: 1)
+        default:
+           sendCoordinate(x: 0, y: 0)
+            
+        }
+    }
+    
+    //funcao para mandar as coordenadas via WC para o iOS
+    
 	override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        // Configure interface objects here.
+        if WCSession.isSupported(){
+            session = WCSession.default
+            session?.delegate = self
+            session?.activate()
+            print("sessao ativada")
+            
+        }
+
+        
+    }
+    
+    func sendCoordinate(x: Int = 0,y: Int = 0){
+        if let validSession = session {
+            
+            let coord = ["x":x,"y":y]
+            print(coord["x"]!,coord["y"]!)
+            validSession.sendMessage(coord, replyHandler: nil, errorHandler: nil)
+        }
     }
     
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-//		motionAvailable(motionManager)
-//		recordingMotion(motionManager)
         super.willActivate()
     }
 
@@ -60,7 +94,9 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-	
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        //done
+    }
 	
 
 }

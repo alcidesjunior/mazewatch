@@ -7,12 +7,17 @@
 //
 
 import UIKit
-
+import WatchConnectivity
 class GameViewController: UIViewController {
-
+//    @IBOutlet var teste: UILabel!
+    var session: WCSession?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if WCSession.isSupported(){
+            session = WCSession.default
+            session?.delegate = self
+            session?.activate()
+        }
         // Do any additional setup after loading the view.
     }
 
@@ -22,14 +27,20 @@ class GameViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+}
+extension GameViewController: WCSessionDelegate{
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {}
+    func sessionDidBecomeInactive(_ session: WCSession) {}
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+        
     }
-    */
-
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        
+        DispatchQueue.main.async(){
+            if let coordReceived = message as? [String: Int]{
+//                self.teste.text = String(describing: "X: \(String(describing: coordReceived["x"]!)) Y: \(String(describing: coordReceived["y"]!))")
+            }
+        }
+    }
+    func sessionDidDeactivate(_ session: WCSession) {}
 }

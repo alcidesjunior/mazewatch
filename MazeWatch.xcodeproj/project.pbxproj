@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
 		BE4DA10D215D1E5700AD00EF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4DA10C215D1E5700AD00EF /* GameViewController.swift */; };
 		BE4DA10F215D1EA800AD00EF /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4DA10E215D1EA800AD00EF /* Game.storyboard */; };
 		BE4DA111215D22C400AD00EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4DA110215D22C400AD00EF /* Assets.xcassets */; };
@@ -15,9 +14,7 @@
 		BE4DA116216240BF00AD00EF /* BeginGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4DA115216240BF00AD00EF /* BeginGameViewController.swift */; };
 		BE4DA1192162521700AD00EF /* EndGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4DA1182162521700AD00EF /* EndGame.storyboard */; };
 		BE4DA11B2162522500AD00EF /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4DA11A2162522500AD00EF /* EndGameViewController.swift */; };
-
 		BE58B3C22162474600D2D512 /* BallMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58B3C12162474600D2D512 /* BallMovement.swift */; };
-
 		BE7790D6215D064A00FE7690 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7790D5215D064A00FE7690 /* AppDelegate.swift */; };
 		BE7790D8215D064A00FE7690 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7790D7215D064A00FE7690 /* ViewController.swift */; };
 		BE7790DB215D064A00FE7690 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7790D9215D064A00FE7690 /* Main.storyboard */; };
@@ -31,7 +28,6 @@
 		BE7790FD215D064F00FE7690 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7790FC215D064F00FE7690 /* NotificationController.swift */; };
 		BE7790FF215D064F00FE7690 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7790FE215D064F00FE7690 /* ComplicationController.swift */; };
 		BE779101215D064F00FE7690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE779100215D064F00FE7690 /* Assets.xcassets */; };
-		BE779112215D1BEA00FE7690 /* AcelerometroInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE779111215D1BEA00FE7690 /* AcelerometroInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +73,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-
 		BE4DA10C215D1E5700AD00EF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		BE4DA10E215D1EA800AD00EF /* Game.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
 		BE4DA110215D22C400AD00EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,9 +80,7 @@
 		BE4DA115216240BF00AD00EF /* BeginGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginGameViewController.swift; sourceTree = "<group>"; };
 		BE4DA1182162521700AD00EF /* EndGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EndGame.storyboard; sourceTree = "<group>"; };
 		BE4DA11A2162522500AD00EF /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
-
 		BE58B3C12162474600D2D512 /* BallMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallMovement.swift; sourceTree = "<group>"; };
-
 		BE7790D2215D064A00FE7690 /* MazeWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MazeWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7790D5215D064A00FE7690 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE7790D7215D064A00FE7690 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,7 +99,6 @@
 		BE779100215D064F00FE7690 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE779102215D064F00FE7690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE779103215D064F00FE7690 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		BE779111215D1BEA00FE7690 /* AcelerometroInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelerometroInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,7 +203,6 @@
 				BE779100215D064F00FE7690 /* Assets.xcassets */,
 				BE779102215D064F00FE7690 /* Info.plist */,
 				BE779103215D064F00FE7690 /* PushNotificationPayload.apns */,
-				BE779111215D1BEA00FE7690 /* AcelerometroInterfaceController.swift */,
 			);
 			path = "MazeWatch WatchKit Extension";
 			sourceTree = "<group>";
@@ -367,7 +358,6 @@
 				BE7790FF215D064F00FE7690 /* ComplicationController.swift in Sources */,
 				BE58B3C22162474600D2D512 /* BallMovement.swift in Sources */,
 				BE7790FB215D064F00FE7690 /* ExtensionDelegate.swift in Sources */,
-				BE779112215D1BEA00FE7690 /* AcelerometroInterfaceController.swift in Sources */,
 				BE7790F9215D064F00FE7690 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,19 +606,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-
-
-				DEVELOPMENT_TEAM = "";
-
-
+				DEVELOPMENT_TEAM = H5762RAVC8;
 				INFOPLIST_FILE = MazeWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-
-				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch;
-
+				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -640,19 +624,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-
-
-				DEVELOPMENT_TEAM = "";
-
-
+				DEVELOPMENT_TEAM = H5762RAVC8;
 				INFOPLIST_FILE = MazeWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-
-				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch;
-
+				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
