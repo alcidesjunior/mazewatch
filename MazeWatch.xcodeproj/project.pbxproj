@@ -16,6 +16,7 @@
 		BE4DA11B2162522500AD00EF /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4DA11A2162522500AD00EF /* EndGameViewController.swift */; };
 		BE58B3C22162474600D2D512 /* BallMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58B3C12162474600D2D512 /* BallMovement.swift */; };
 		BE58B3C421625F1C00D2D512 /* HuntAndKill.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58B3C321625F1C00D2D512 /* HuntAndKill.swift */; };
+		BE58B3D92163C26100D2D512 /* HuntAndKill2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58B3D82163C26100D2D512 /* HuntAndKill2.swift */; };
 		BE7790D6215D064A00FE7690 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7790D5215D064A00FE7690 /* AppDelegate.swift */; };
 		BE7790D8215D064A00FE7690 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7790D7215D064A00FE7690 /* ViewController.swift */; };
 		BE7790DB215D064A00FE7690 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7790D9215D064A00FE7690 /* Main.storyboard */; };
@@ -84,6 +85,7 @@
 		BE4DA11A2162522500AD00EF /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 		BE58B3C12162474600D2D512 /* BallMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallMovement.swift; sourceTree = "<group>"; };
 		BE58B3C321625F1C00D2D512 /* HuntAndKill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuntAndKill.swift; sourceTree = "<group>"; };
+		BE58B3D82163C26100D2D512 /* HuntAndKill2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuntAndKill2.swift; sourceTree = "<group>"; };
 		BE7790D2215D064A00FE7690 /* MazeWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MazeWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7790D5215D064A00FE7690 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE7790D7215D064A00FE7690 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				BE4DA10C215D1E5700AD00EF /* GameViewController.swift */,
 				BE4DA10E215D1EA800AD00EF /* Game.storyboard */,
 				BE58B3C321625F1C00D2D512 /* HuntAndKill.swift */,
+				BE58B3D82163C26100D2D512 /* HuntAndKill2.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				BE4DA11B2162522500AD00EF /* EndGameViewController.swift in Sources */,
 				BE4DA116216240BF00AD00EF /* BeginGameViewController.swift in Sources */,
 				BE58B3C421625F1C00D2D512 /* HuntAndKill.swift in Sources */,
+				BE58B3D92163C26100D2D512 /* HuntAndKill2.swift in Sources */,
 				BE7790D6215D064A00FE7690 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,14 +536,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H5762RAVC8;
+				DEVELOPMENT_TEAM = 89JG34L8Z2;
 				INFOPLIST_FILE = "MazeWatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch12.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = academyIFCE.mazewatch.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -554,14 +558,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H5762RAVC8;
+				DEVELOPMENT_TEAM = 89JG34L8Z2;
 				INFOPLIST_FILE = "MazeWatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch12.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = academyIFCE.mazewatch.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -577,10 +581,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H5762RAVC8;
+				DEVELOPMENT_TEAM = 89JG34L8Z2;
 				IBSC_MODULE = MazeWatch_WatchKit_Extension;
 				INFOPLIST_FILE = "MazeWatch WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch12.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = academyIFCE.mazewatch.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -596,10 +600,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H5762RAVC8;
+				DEVELOPMENT_TEAM = 89JG34L8Z2;
 				IBSC_MODULE = MazeWatch_WatchKit_Extension;
 				INFOPLIST_FILE = "MazeWatch WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch12.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = academyIFCE.mazewatch.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -614,13 +618,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 89JG34L8Z2;
 				INFOPLIST_FILE = MazeWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = academyIFCE.mazewatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -632,13 +636,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 89JG34L8Z2;
 				INFOPLIST_FILE = MazeWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = academyIFCE.mazewatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

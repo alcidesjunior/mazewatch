@@ -12,7 +12,9 @@ class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+		let huntKill = HuntAndKill2(sizeX: 3)
+		var maze = huntKill.GridMazeGenerator()
+		print(maze)
         // Do any additional setup after loading the view.
     }
 
