@@ -16,6 +16,7 @@ class GameViewController: UIViewController {
     var aux = 0
     var maze = [[0,0,1,1],[1,0,0,1],[1,0,1,1],[1,0,0,0],[1,0,0,0]]
     var player : UIView = UIView()
+    var playerPosition = CGPoint(x: 0, y: 0)
     var cellSize : CGSize?
     let mazeSize = CGSize(width: 4, height: 5)
     
@@ -25,7 +26,7 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                super.viewDidLoad()
+
         if WCSession.isSupported(){
             session = WCSession.default
             session?.delegate = self
@@ -54,14 +55,20 @@ class GameViewController: UIViewController {
 
             }
         }
-        animator?.addBehavior(collision)
+        //animator?.addBehavior(collision)
        
     }
     
     func move(player: UIView, toPosition: CGPoint){
-        UIView.animate(withDuration: 0.3) {
-            player.frame.origin = toPosition
+        print(player.frame.origin)
+        print(toPosition)
+        DispatchQueue.main.async {
+            UIView.animate(withDuration: 0.3) {
+                let startpos = player.frame.origin
+                player.frame.origin = CGPoint(x: startpos.x + toPosition.x, y: startpos.y + toPosition.y)
+            }
         }
+
 
     }
     
@@ -71,7 +78,7 @@ class GameViewController: UIViewController {
         player.frame.origin = CGPoint(x: ((cellSize?.width)! - player.frame.width)/2, y: ((cellSize?.height)! - player.frame.height)/2)
         player.layer.cornerRadius = player.frame.width/2
         player.backgroundColor = UIColor.cyan
-        collision.addItem(player)
+        //collision.addItem(player)
 
     }
     
@@ -101,6 +108,12 @@ extension GameViewController: WCSessionDelegate{
         
         DispatchQueue.main.async(){
             if let coordReceived = message as? [String: Int]{
+                if(self.checkPlayerBounds(playerPos: self.playerPosition, direction: coordReceived)){
+                    
+                    self.move(player: self.player, toPosition: self.internProd(cellSize: self.cellSize!, direction: coordReceived))
+                    self.playerPosition.x += CGFloat(coordReceived["x"]!)
+                    self.playerPosition.y -= CGFloat( coordReceived["y"]!)
+                }
 //                self.teste.text = String(describing: "X: \(String(describing: coordReceived["x"]!)) Y: \(String(describing: coordReceived["y"]!))")
             }
         }
@@ -111,8 +124,61 @@ extension GameViewController: WCSessionDelegate{
         timer.invalidate()
     }
     
-    
-    
+    func internProd(cellSize: CGSize, direction: [String: Int])->CGPoint{
+        return CGPoint(x: cellSize.width * CGFloat(direction["x"]!), y: cellSize.height * -CGFloat(direction["y"]!))
+    }
+    func checkPlayerBounds(playerPos: CGPoint, direction: [String: Int])-> Bool{
+        if(direction["x"] == -1){
+            if(playerPos.x == 0){
+                return false
+            }
+        }
+        if(direction["x"] == 1){
+            if(playerPos.x == self.mazeSize.width - 1){
+                return false
+            }
+        }
+        if(direction["y"] == 1){
+            if(playerPos.y == 0){
+                return false
+            }
+        }
+        if(direction["y"] == -1){
+            if(playerPos.y == self.mazeSize.height - 1){
+                return false
+            }
+        }
+        
+        
+        if(direction["x"] == -1){
+            if(self.maze[Int(playerPos.y)][Int(playerPos.x) - 1] == 1){
+
+                return false
+            }
+        }
+        if(direction["x"] == 1){
+            if(self.maze[Int(playerPos.y)][Int(playerPos.x) + 1] == 1){
+
+                return false
+            }
+        }
+        if(direction["y"] == 1){
+            if(self.maze[Int(playerPos.y) - 1][Int(playerPos.x)] == 1){
+                return false
+            }
+        }
+        if(direction["y"] == -1){
+            if(self.maze[Int(playerPos.y) + 1][Int(playerPos.x)] == 1){
+                return false
+            }
+        }
+        
+        
+        
+        
+        
+        return true
+    }
     
     /*
     // MARK: - Navigation
