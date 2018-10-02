@@ -12,6 +12,8 @@ class EndGameViewController: UIViewController {
     @IBOutlet weak var btReset: UIButton!
     @IBOutlet weak var lbTime: UILabel!
     
+    var timer: Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

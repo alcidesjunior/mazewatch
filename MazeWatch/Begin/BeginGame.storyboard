@@ -57,10 +57,12 @@
                                     <constraint firstAttribute="trailing" secondItem="Gg5-Gq-B4x" secondAttribute="trailing" constant="88" id="2US-V6-Lig"/>
                                     <constraint firstItem="2HE-Cc-tQM" firstAttribute="top" secondItem="9mJ-AJ-fXM" secondAttribute="top" constant="177" id="HGo-Ng-8Yw"/>
                                     <constraint firstItem="2HE-Cc-tQM" firstAttribute="leading" secondItem="9mJ-AJ-fXM" secondAttribute="leading" constant="87" id="Kym-Xf-MFJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="2HE-Cc-tQM" secondAttribute="trailing" constant="88" id="d0i-9A-taI"/>
                                     <constraint firstAttribute="trailing" secondItem="0JZ-fX-r8G" secondAttribute="trailing" constant="88" id="gfW-o2-CY9"/>
                                     <constraint firstItem="0JZ-fX-r8G" firstAttribute="leading" secondItem="9mJ-AJ-fXM" secondAttribute="leading" constant="88" id="guy-wo-D9K"/>
                                     <constraint firstAttribute="bottom" secondItem="Gg5-Gq-B4x" secondAttribute="bottom" constant="220" id="ihb-BK-jFK"/>
                                     <constraint firstItem="0JZ-fX-r8G" firstAttribute="top" secondItem="Gg5-Gq-B4x" secondAttribute="bottom" constant="99.5" id="uVs-L3-aQa"/>
+                                    <constraint firstItem="Gg5-Gq-B4x" firstAttribute="leading" secondItem="9mJ-AJ-fXM" secondAttribute="leading" constant="88" id="xuD-c3-Fwz"/>
                                     <constraint firstItem="Gg5-Gq-B4x" firstAttribute="top" secondItem="2HE-Cc-tQM" secondAttribute="bottom" constant="17" id="yoY-Bq-2V6"/>
                                 </constraints>
                             </view>

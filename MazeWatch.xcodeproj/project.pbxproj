@@ -524,14 +524,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H5762RAVC8;
+				DEVELOPMENT_TEAM = 4Q9SUUL4ZR;
 				INFOPLIST_FILE = "MazeWatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch12.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch111.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -546,14 +546,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H5762RAVC8;
+				DEVELOPMENT_TEAM = 4Q9SUUL4ZR;
 				INFOPLIST_FILE = "MazeWatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch12.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch111.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -569,10 +569,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H5762RAVC8;
+				DEVELOPMENT_TEAM = 4Q9SUUL4ZR;
 				IBSC_MODULE = MazeWatch_WatchKit_Extension;
 				INFOPLIST_FILE = "MazeWatch WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch12.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch111.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -588,10 +588,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H5762RAVC8;
+				DEVELOPMENT_TEAM = 4Q9SUUL4ZR;
 				IBSC_MODULE = MazeWatch_WatchKit_Extension;
 				INFOPLIST_FILE = "MazeWatch WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch12.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch111.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -606,13 +606,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H5762RAVC8;
+
+				DEVELOPMENT_TEAM = 4Q9SUUL4ZR;
+
 				INFOPLIST_FILE = MazeWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch12;
+
+				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch111;
+
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -624,13 +628,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H5762RAVC8;
+
+				DEVELOPMENT_TEAM = 4Q9SUUL4ZR;
+
 				INFOPLIST_FILE = MazeWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch12;
+
+				PRODUCT_BUNDLE_IDENTIFIER = com.ada.MazeWatch111;
+
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

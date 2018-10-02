@@ -26,7 +26,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.ada.MazeWatch12</string>
+	<string>com.ada.MazeWatch111</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>
