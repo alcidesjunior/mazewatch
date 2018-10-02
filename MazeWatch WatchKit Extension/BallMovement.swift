@@ -21,9 +21,7 @@ class BallMovementInterfaceController{
 				if error != nil {
 					print("Error found \(error.debugDescription)")
 				}
-				if let myData = data{
-					
-				}
+				
 			}
 		} else{
 			print("Not available Acceloremeter")
