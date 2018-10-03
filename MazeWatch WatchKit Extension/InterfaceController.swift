@@ -8,7 +8,6 @@
 
 import WatchKit
 import Foundation
-import CoreMotion
 import WatchConnectivity
 
 class InterfaceController: WKInterfaceController, WCSessionDelegate {
@@ -16,34 +15,6 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
 	@IBOutlet var graficoBolinha: WKInterfaceGroup!
     var session: WCSession? = WCSession.default
 	
-	var motionManager = CMMotionManager()
-
-	func motionAvailable(_ motion: CMMotionManager, ball: WKInterfaceImage){
-		if motion.isAccelerometerAvailable{
-			print("Acceloremeter is available")
-			motion.accelerometerUpdateInterval = 0.2
-			motion.startAccelerometerUpdates(to: OperationQueue.current!) { (data, error) in
-				if let myData = data{
-					print(myData)
-					//print(myData.acceleration.x)
-
-				}
-				if error != nil{
-					print("Error found \(error.debugDescription)")
-				}
-			}
-//			motion.startDeviceMotionUpdates(to: OperationQueue.current!) { (data, error) in
-//				if error != nil {
-//					print("Error found \(error.debugDescription)")
-//				}
-//				if let myData = data{
-//				}
-//			}
-		} else{
-			print("Not available Acceloremeter")
-		}
-		
-	}
     @IBAction func getSwipe(_ sender: Any) {
         let direction = sender as! WKSwipeGestureRecognizer
         switch direction.direction {
@@ -60,8 +31,6 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
             
         }
     }
-    
-    //funcao para mandar as coordenadas via WC para o iOS
     
 	override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -97,6 +66,4 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         //done
     }
-	
-
 }

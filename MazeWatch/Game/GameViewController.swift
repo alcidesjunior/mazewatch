@@ -55,8 +55,6 @@ class GameViewController: UIViewController {
 
             }
         }
-        //animator?.addBehavior(collision)
-       
     }
     
     func move(player: UIView, toPosition: CGPoint){
@@ -114,7 +112,6 @@ extension GameViewController: WCSessionDelegate{
                     self.playerPosition.x += CGFloat(coordReceived["x"]!)
                     self.playerPosition.y -= CGFloat( coordReceived["y"]!)
                 }
-//                self.teste.text = String(describing: "X: \(String(describing: coordReceived["x"]!)) Y: \(String(describing: coordReceived["y"]!))")
             }
         }
     }
@@ -208,7 +205,7 @@ extension GameViewController: WCSessionDelegate{
     }
     
     func createUIView(position: CGPoint, size: CGSize, color: UIColor)-> UIView{
-        var view = UIView()
+        let view = UIView()
         view.frame.size = size
         view.frame.origin = position
         view.backgroundColor = color
